@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses - Neoville Tech | Future-Ready Education</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/courses.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-container">
+                    <span class="logo-text">Neoville</span>
+                    <span class="logo-subtext">TECH</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-enroll" href="contact.html">Enroll Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Courses Hero Section -->
+    <section class="courses-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="courses-title">
+                        Future-Ready 
+                        <span class="text-highlight">Learning Paths</span>
+                    </h1>
+                    <p class="courses-subtitle">
+                        Designed for school and college students to master cutting-edge technologies 
+                        and build innovative solutions for tomorrow's world
+                    </p>
+                    
+                    <!-- Audience Selector -->
+                    <div class="audience-selector">
+                        <div class="selector-tabs">
+                            <button class="selector-tab active" data-audience="school">
+                                <i class="fas fa-graduation-cap"></i>
+                                School Students (Grade 6-9)
+                            </button>
+                            <button class="selector-tab" data-audience="college">
+                                <i class="fas fa-user-graduate"></i>
+                                College Students & Graduates
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Students Courses -->
+    <section class="courses-section school-courses active">
+        <div class="container">
+            <div class="section-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <h2>Young Innovators Program</h2>
+                        <p class="section-subtitle">For Grade 6-9 Students | Building Foundations in Emerging Technologies</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <div class="program-badge">
+                            <i class="fas fa-rocket"></i>
+                            <span>Future Skills Development</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-features">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Critical Thinking</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Creativity</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-users"></i>
+                        <span>Collaboration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- AI & Robotics Course -->
+                <div class="course-card featured">
+                    <div class="course-header">
+                        <div class="course-category">AI & Robotics</div>
+                        <div class="course-badge">Most Popular</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="course-title">AI & Robotics Fundamentals</h3>
+                    <p class="course-description">
+                        Introduction to artificial intelligence, machine learning, and robotics. 
+                        Build your first AI-powered robot and understand how machines learn.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Beginner</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Hands-on Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Robotics</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('AI & Robotics Fundamentals', 'school')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('ai-robotics')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Drone Technology -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Emerging Tech</div>
+                        <div class="course-badge">New</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-drone"></i>
+                    </div>
+                    <h3 class="course-title">Drone Technology & Programming</h3>
+                    <p class="course-description">
+                        Learn drone mechanics, aerodynamics, and programming. 
+                        Code flight patterns and understand aerial robotics applications.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Beginner</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Flight Simulations</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Aerodynamics</span>
+                        <span class="skill-tag">Programming</span>
+                        <span class="skill-tag">Electronics</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Drone Technology & Programming', 'school')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('drone-tech')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- IoT & Embedded Systems -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">IoT</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="course-title">IoT & Embedded Systems</h3>
+                    <p class="course-description">
+                        Create smart devices and understand Internet of Things. 
+                        Build connected systems with sensors and microcontrollers.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>5 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Intermediate</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Hardware Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Arduino</span>
+                        <span class="skill-tag">Sensors</span>
+                        <span class="skill-tag">Networking</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('IoT & Embedded Systems', 'school')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('iot-embedded')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Generative AI -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">AI</div>
+                        <div class="course-badge">Trending</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3 class="course-title">Generative AI & Creative Computing</h3>
+                    <p class="course-description">
+                        Explore AI that creates art, music, and stories. 
+                        Understand how generative models work and create your own AI art.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Beginner</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Creative Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Creative AI</span>
+                        <span class="skill-tag">Neural Networks</span>
+                        <span class="skill-tag">Digital Art</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Generative AI & Creative Computing', 'school')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('generative-ai')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Development</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="course-title">Web Development & Design</h3>
+                    <p class="course-description">
+                        Learn to build modern websites with HTML, CSS, and JavaScript. 
+                        Create interactive web applications and understand web design principles.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>4 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Beginner</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Website Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Web Development & Design', 'school')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('web-dev')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Neuroscience & AI -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Interdisciplinary</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="course-title">Neuroscience & AI Connections</h3>
+                    <p class="course-description">
+                        Explore how the human brain inspires artificial intelligence. 
+                        Understand neural networks through neuroscience principles.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>3 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Intermediate</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Research Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Neuroscience</span>
+                        <span class="skill-tag">AI Ethics</span>
+                        <span class="skill-tag">Cognitive Science</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Neuroscience & AI Connections', 'school')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('neuroscience-ai')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- College Students Courses -->
+    <section class="courses-section college-courses">
+        <div class="container">
+            <div class="section-header">
+                <div class="row align-items-end">
+                    <div class="col-lg-8">
+                        <h2>Career Accelerator Program</h2>
+                        <p class="section-subtitle">For College Students & Graduates | Industry-Ready Technical Skills</p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <div class="program-badge">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Industry Focused</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-features">
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-code"></i>
+                        <span>Advanced Programming</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-database"></i>
+                        <span>Data Systems</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud Technologies</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="courses-grid">
+                <!-- Full Stack Development -->
+                <div class="course-card featured">
+                    <div class="course-header">
+                        <div class="course-category">Development</div>
+                        <div class="course-badge">High Demand</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-layer-group"></i>
+                    </div>
+                    <h3 class="course-title">Full Stack Development</h3>
+                    <p class="course-description">
+                        Master front-end and back-end technologies. Build scalable web applications 
+                        using modern frameworks and cloud deployment.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>6 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Real Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">AWS</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Full Stack Development', 'college')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('full-stack')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Data Science -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Data Science</div>
+                        <div class="course-badge">Trending</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="course-title">Data Science & Machine Learning</h3>
+                    <p class="course-description">
+                        Advanced data analysis, statistical modeling, and machine learning algorithms. 
+                        Work with real datasets and build predictive models.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>8 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Industry Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Statistics</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Data Science & Machine Learning', 'college')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('data-science')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Security</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="course-title">Cybersecurity & Ethical Hacking</h3>
+                    <p class="course-description">
+                        Learn network security, cryptography, and ethical hacking techniques. 
+                        Protect systems and understand security vulnerabilities.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>7 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Security Labs</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Cryptography</span>
+                        <span class="skill-tag">Pen Testing</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Cybersecurity & Ethical Hacking', 'college')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('cybersecurity')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Blockchain -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Emerging Tech</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3 class="course-title">Blockchain Development</h3>
+                    <p class="course-description">
+                        Understand blockchain technology, smart contracts, and decentralized applications. 
+                        Build your first DApp on Ethereum network.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>5 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Intermediate</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>DApp Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">Solidity</span>
+                        <span class="skill-tag">Smart Contracts</span>
+                        <span class="skill-tag">Web3</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Blockchain Development', 'college')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('blockchain')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Cloud Computing -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Cloud</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="course-title">Cloud Computing & DevOps</h3>
+                    <p class="course-description">
+                        Master cloud platforms, containerization, and CI/CD pipelines. 
+                        Deploy and manage applications on AWS and Azure.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>6 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Advanced</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>Cloud Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Kubernetes</span>
+                        <span class="skill-tag">CI/CD</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Cloud Computing & DevOps', 'college')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('cloud-devops')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Development -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <div class="course-category">Development</div>
+                    </div>
+                    <div class="course-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="course-title">Mobile App Development</h3>
+                    <p class="course-description">
+                        Build cross-platform mobile applications using React Native and Flutter. 
+                        Create responsive and performant mobile experiences.
+                    </p>
+                    <div class="course-details">
+                        <div class="detail-item">
+                            <i class="fas fa-clock"></i>
+                            <span>5 Months</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-signal"></i>
+                            <span>Intermediate</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tasks"></i>
+                            <span>App Projects</span>
+                        </div>
+                    </div>
+                    <div class="course-skills">
+                        <span class="skill-tag">React Native</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">Firebase</span>
+                    </div>
+                    <div class="course-actions">
+                        <button class="btn-enroll" onclick="enrollCourse('Mobile App Development', 'college')">
+                            <i class="fas fa-rocket"></i>
+                            Start Learning
+                        </button>
+                        <button class="btn-outline" onclick="viewCourseDetails('mobile-dev')">
+                            <i class="fas fa-info-circle"></i>
+                            Details
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Benefits Section -->
+    <section class="program-benefits">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="benefits-content">
+                        <h2>Why Choose Our Programs?</h2>
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <div class="benefit-text">
+                                    <h4>Industry Expert Instructors</h4>
+                                    <p>Learn from professionals working in top tech companies</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <div class="benefit-text">
+                                    <h4>Project-Based Learning</h4>
+                                    <p>Build real projects that showcase your skills to employers</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="benefit-text">
+                                    <h4>Career Support</h4>
+                                    <p>Get placement assistance and career guidance</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="benefit-text">
+                                    <h4>Recognized Certification</h4>
+                                    <p>Receive industry-recognized certificates upon completion</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="benefits-visual">
+                        <div class="stat-card">
+                            <h3>95%</h3>
+                            <p>Completion Rate</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>10+</h3>
+                            <p>Projects Built</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>25+</h3>
+                            <p>Industry Partners</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3>89%</h3>
+                            <p>Career Advancement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h2>Ready to Build Your Future?</h2>
+                    <p>Join thousands of students who have transformed their careers with our industry-focused programs</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg">Get Started Today</a>
+                        <a href="about.html" class="btn btn-outline-light btn-lg">Learn About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Social Section -->
+    <section class="contact-social-section">
+        <!-- Same as index.html -->
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/courses.js"></script>
+</body>
+</html>

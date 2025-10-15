@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Neoville Tech | Get in Touch</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-container">
+                    <span class="logo-text">Neoville</span>
+                    <span class="logo-subtext">TECH</span>
+                </div>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-enroll" href="courses.html">Enroll Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Let's Start Something 
+                            <span class="text-highlight">Amazing</span>
+                        </h1>
+                        <p class="hero-description">
+                            Ready to transform your future? Get in touch with us for course inquiries, 
+                            partnership opportunities, or custom software solutions. We're here to help you succeed.
+                        </p>
+                        <div class="contact-features">
+                            <div class="feature-item">
+                                <i class="fas fa-clock"></i>
+                                <span>24-48 hour response time</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-headset"></i>
+                                <span>Expert consultation available</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-globe"></i>
+                                <span>Online & offline support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-visual">
+                        <div class="contact-method method-1">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Us</span>
+                        </div>
+                        <div class="contact-method method-2">
+                            <i class="fas fa-phone"></i>
+                            <span>Call Now</span>
+                        </div>
+                        <div class="contact-method method-3">
+                            <i class="fas fa-calendar"></i>
+                            <span>Book Meeting</span>
+                        </div>
+                        <div class="main-visual">
+                            <div class="contact-graphic">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Get in Touch</h2>
+                <p>Multiple ways to reach us</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Us</h4>
+                        <p>Send us your queries and we'll get back to you within 24 hours</p>
+                        <div class="contact-info">
+                            <strong>neovilletech@gmail.com</strong>
+                        </div>
+                        <a href="mailto:info@neovilletech.com" class="btn btn-outline-primary">Send Email</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Call Us</h4>
+                        <p>Speak directly with our education consultants</p>
+                        <div class="contact-info">
+                            <strong>+91 6374229060</strong>
+                            <br>
+                            <small>Mon-Fri: 9AM-9PM</small>
+                        </div>
+                        <a href="tel:+91 6374229060" class="btn btn-outline-primary">Call Now</a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <div class="method-card">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Visit Us</h4>
+                        <p>Meet us at our office for a personalized consultation</p>
+                        <div class="contact-info">
+                            <strong>Thirukkanur main Road</strong><br>
+                            <span>Thirukkanur, Pondicherry</span><br>
+                            <span>605501</span>
+                        </div>
+                        <button class="btn btn-outline-primary" onclick="openMap()">Get Directions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Form Section -->
+    <section class="inquiry-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="form-container">
+                        <div class="form-header text-center">
+                            <h2>Send Us a Message</h2>
+                            <p>Fill out the form below and we'll get back to you soon</p>
+                        </div>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-tabs">
+                                <button type="button" class="form-tab active" data-form="general">General Inquiry</button>
+                                <button type="button" class="form-tab" data-form="course">Course Inquiry</button>
+                                <button type="button" class="form-tab" data-form="business">Business Solution</button>
+                            </div>
+                            
+                            <!-- General Inquiry Form -->
+                            <div class="form-pane active" id="generalForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name">Full Name *</label>
+                                            <input type="text" id="name" name="name" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email">Email Address *</label>
+                                            <input type="email" id="email" name="email" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number</label>
+                                            <input type="tel" id="phone" name="phone" class="form-control">
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="subject">Subject *</label>
+                                            <input type="text" id="subject" name="subject" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea id="message" name="message" rows="5" class="form-control" placeholder="Tell us how we can help you..." required></textarea>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Course Inquiry Form -->
+                            <div class="form-pane" id="courseForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="courseName">Student Name *</label>
+                                            <input type="text" id="courseName" name="courseName" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="studentAge">Age/Grade *</label>
+                                            <input type="text" id="studentAge" name="studentAge" class="form-control" placeholder="e.g., 14 years or Grade 9" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="parentEmail">Parent/Guardian Email *</label>
+                                            <input type="email" id="parentEmail" name="parentEmail" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="parentPhone">Parent/Guardian Phone</label>
+                                            <input type="tel" id="parentPhone" name="parentPhone" class="form-control">
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="interestArea">Area of Interest *</label>
+                                    <select id="interestArea" name="interestArea" class="form-control" required>
+                                        <option value="">Select an area</option>
+                                        <option value="ai-robotics">AI & Robotics</option>
+                                        <option value="web-development">Web Development</option>
+                                        <option value="data-science">Data Science</option>
+                                        <option value="cybersecurity">Cybersecurity</option>
+                                        <option value="iot-embedded">IoT & Embedded Systems</option>
+                                        <option value="stem">STEM Education</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="error-message"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="courseMessage">Additional Information</label>
+                                    <textarea id="courseMessage" name="courseMessage" rows="4" class="form-control" placeholder="Any specific requirements or questions..."></textarea>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+                            
+                            <!-- Business Solution Form -->
+                            <div class="form-pane" id="businessForm">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="companyName">Company Name *</label>
+                                            <input type="text" id="companyName" name="companyName" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="contactPerson">Contact Person *</label>
+                                            <input type="text" id="contactPerson" name="contactPerson" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="businessEmail">Business Email *</label>
+                                            <input type="email" id="businessEmail" name="businessEmail" class="form-control" required>
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="businessPhone">Business Phone</label>
+                                            <input type="tel" id="businessPhone" name="businessPhone" class="form-control">
+                                            <div class="error-message"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="serviceType">Required Service *</label>
+                                    <select id="serviceType" name="serviceType" class="form-control" required>
+                                        <option value="">Select a service</option>
+                                        <option value="web-app">Web Application Development</option>
+                                        <option value="mobile-app">Mobile App Development</option>
+                                        <option value="ecommerce">E-commerce Solution</option>
+                                        <option value="custom-software">Custom Software</option>
+                                        <option value="consultation">Technical Consultation</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                    <div class="error-message"></div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="projectDescription">Project Description *</label>
+                                    <textarea id="projectDescription" name="projectDescription" rows="4" class="form-control" placeholder="Describe your project requirements, timeline, and budget..." required></textarea>
+                                    <div class="error-message"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-submit">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>
+                                    Send Message
+                                </button>
+                                <div class="form-note">
+                                    <small>* Required fields</small>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What age groups do you teach?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer programs for students from Grade 6 through college level and working professionals. Our school programs (Grade 6-9) focus on foundational tech skills, while college and professional programs offer advanced specializations.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Do you provide placement assistance?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We have a dedicated placement cell that provides career guidance, resume building, interview preparation, and connects students with our partner companies for internships and job opportunities.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Can I schedule a demo class?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Absolutely! We offer free demo classes for all our courses. You can schedule a demo by contacting us through the form above or calling us directly. This helps you experience our teaching methodology before enrolling.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What's the typical response time for business inquiries?
+                                </button>
+                            </h3>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We respond to business solution inquiries within 4-6 business hours. For complex project requirements, we schedule a discovery call within 24 hours to better understand your needs and provide a detailed proposal.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-4">
+                        <p>Still have questions? <a href="https://forms.gle/DxixsWpYqD4o8Gms8" class="text-primary">Contact us directly</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map & Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="location-info">
+                        <h3>Visit Our Campus</h3>
+                        <p>Come see our state-of-the-art learning facilities and meet our team in person.</p>
+                        
+                        <div class="location-details">
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <strong>Address</strong>
+                                    <p>Thirukkanur main Road<br>Thirukkanur, Pondicherry. 605501</p>
+                                </div>
+                            </div>
+                            
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Office Hours</strong>
+                                    <p>Monday - Friday: 9:00 AM - 9:00 PM<br>Saturday: 10:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            
+                             
+                        </div>
+                        
+                        <div class="location-actions">
+                            <button class="btn btn-primary" onclick="openMap()">
+                                <i class="fas fa-directions me-2"></i>
+                                Get Directions
+                            </button>
+                            <button class="btn btn-outline-primary" onclick="downloadBrochure()">
+                                <i class="fas fa-download me-2"></i>
+                                Download Brochure
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                 
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Social Section -->
+    <section class="contact-social-section">
+        <!-- Same as index.html -->
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
