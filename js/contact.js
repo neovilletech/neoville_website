@@ -203,8 +203,8 @@ function downloadBrochure() {
         showNotification('Brochure downloaded successfully!', 'success');
         
         // In real implementation, this would trigger actual file download
-        // const link = document.createElement('a');
-        link.href = 'assets/brochure/neoville-tech-brochure.pdf';
+        const link = document.createElement('a');
+        link.href = 'assets/Neoville_Broucher.pdf';
         link.download = 'Neoville-Tech-Brochure.pdf';
         link.click();
     }, 1500);
